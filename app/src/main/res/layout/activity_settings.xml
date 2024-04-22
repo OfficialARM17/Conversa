@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <!-- Main content view -->
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Your main content goes here -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainColour"
+            android:padding="10dp"
+            android:id="@+id/main_toolbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/circular_bg"
+            android:backgroundTint="@color/mainColour"
+            android:src="@drawable/person_icon"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/main_toolbar"
+            android:id="@+id/profile_image_view"/>
+
+        <TextView
+            android:id="@+id/username_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image_view"
+            android:elevation="5dp"
+            android:text="Update Username"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/mainColour"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Username"
+            android:textColor="@color/mainColour"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:layout_below="@id/username_text_view"
+            android:elevation="5dp"
+            android:id="@+id/profile_username"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Phone"
+            android:textColor="@color/mainColour"
+            android:inputType="text"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:layout_below="@id/profile_username"
+            android:elevation="5dp"
+            android:enabled="false"
+            android:id="@+id/profile_phone"
+            tools:ignore="TextFields" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_phone"
+
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_corner"
+                android:text="Update profile"
+                android:id="@+id/profle_update_btn"/>
+            <ProgressBar
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/mainColour"
+                android:layout_gravity="center"
+                android:id="@+id/profile_progress_bar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_gravity="center"
+                android:id="@+id/logout_btn"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Colour for the application -->
+    <color name="mainColour">#0000FF</color>
+    <!-- Secondary Colour for the application -->
+    <color name="secondaryColour">#FFFF00</color>
+    <!-- Basic Colours that will be useful to have -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Additional Colour -->
+    <color name="offWhite">#FDFDFD</color>
+    <!-- Colours for the sender message bubble and receiver message bubble -->
+    <color name="sender_colour">#00008B</color>
+    <color name="receiver_colour">#50C878</color>
+
+</resources>

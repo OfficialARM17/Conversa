@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ASL_Translation_Button"
+        android:icon="@drawable/send_sign_language_icon"
+        android:iconTint="@color/white"
+        android:title="Sign Language Translation"/>
+
+    <item
+        android:id="@+id/Speech_To_TextButton"
+        android:icon="@drawable/microphone_icon"
+        android:iconTint="@color/white"
+        android:title="Speech to Text"/>
+
+</menu>

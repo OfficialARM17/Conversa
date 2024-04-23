@@ -31,11 +31,11 @@ public class UserChatHistory extends FirestoreRecyclerAdapter<ChatMessageSection
         if(model.getSenderId().equals(FirebaseManager.getCurrentUserId())){
             // If the current user sent a message, hide the chat on the left hand side
             holder.userSentChatLayout.setVisibility(View.GONE);
-            holder.otherUserrightChatLayout.setVisibility(View.VISIBLE);
+            holder.otherUserChatLayout.setVisibility(View.VISIBLE);
             holder.rightChatTextview.setText(model.getMessage());
        }else{
             //If another user sent the message, hide the chat on the right hand side
-            holder.otherUserrightChatLayout.setVisibility(View.GONE);
+            holder.otherUserChatLayout.setVisibility(View.GONE);
             holder.userSentChatLayout.setVisibility(View.VISIBLE);
             holder.leftChatTextview.setText(model.getMessage());
        }
@@ -51,7 +51,7 @@ public class UserChatHistory extends FirestoreRecyclerAdapter<ChatMessageSection
     // Class to hold all of the content inside of the Chat Screen
     class userChatHistoryContentViewHolder extends RecyclerView.ViewHolder{
         // Layouts for each side of the user chat
-        LinearLayout userSentChatLayout,otherUserrightChatLayout;
+        LinearLayout userSentChatLayout, otherUserChatLayout;
         // Text that will appear on each side
         TextView leftChatTextview,rightChatTextview;
 
@@ -59,7 +59,7 @@ public class UserChatHistory extends FirestoreRecyclerAdapter<ChatMessageSection
             super(itemView);
             // Initializing the views
             userSentChatLayout = itemView.findViewById(R.id.left_chat_layout);
-            otherUserrightChatLayout = itemView.findViewById(R.id.right_chat_layout);
+            otherUserChatLayout = itemView.findViewById(R.id.right_chat_layout);
             leftChatTextview = itemView.findViewById(R.id.left_chat_textview);
             rightChatTextview = itemView.findViewById(R.id.right_chat_textview);
         }

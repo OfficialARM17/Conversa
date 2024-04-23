@@ -191,11 +191,9 @@ public class Chat extends AppCompatActivity {
     // Load chat history method
     void loadChatHistory(){
         // Load the history of the chatroom and descend it by order like a chat application
-        Query query = FirebaseManager.getChatroomMessageReference(chatroomId)
-                .orderBy("timestamp", Query.Direction.DESCENDING);
+        Query query = FirebaseManager.getChatroomMessageReference(chatroomId).orderBy("timestamp", Query.Direction.DESCENDING);
         // Use FirestoreRecyclerOptions to gather specific data needed to get the chat message loading
-        FirestoreRecyclerOptions<ChatMessageSection> options = new FirestoreRecyclerOptions.Builder<ChatMessageSection>()
-                .setQuery(query, ChatMessageSection.class).build();
+        FirestoreRecyclerOptions<ChatMessageSection> options = new FirestoreRecyclerOptions.Builder<ChatMessageSection>().setQuery(query, ChatMessageSection.class).build();
         // Create an instance of UserChatHistory with correct information
         adapter = new UserChatHistory(options,getApplicationContext());
         // Create a layout to showcase the messages
@@ -263,5 +261,4 @@ public class Chat extends AppCompatActivity {
                     }
                 });
     }
-
 }

@@ -10,7 +10,6 @@ public class ChatMessageSection {
     private String senderId;
     // Time of when the message is sent
     private Timestamp timestamp;
-
     public ChatMessageSection() {
     }
     // Constructor to initialize the chat message section with provided details
@@ -19,9 +18,7 @@ public class ChatMessageSection {
         this.senderId = senderId;
         this.timestamp = timestamp;
     }
-
     // Getter methods for each attribute
-
     public String getMessage() {
         return message;
     }
@@ -31,9 +28,7 @@ public class ChatMessageSection {
     public Timestamp getTimestamp() {
         return timestamp;
     }
-
     // Setter methods for each attribute
-
     public void setMessage(String message) {
         this.message = message;
     }

@@ -87,29 +87,34 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:gravity="center_vertical"
             android:layout_marginTop="20dp"
             android:layout_below="@id/profile_phone"
-
             android:orientation="vertical">
+
             <Button
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:background="@drawable/btn_rounded_corner"
                 android:text="Update profile"
                 android:id="@+id/profle_update_btn"/>
+
             <ProgressBar
-                android:layout_width="32dp"
+                android:paddingTop="30dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:indeterminateTint="@color/mainColour"
                 android:layout_gravity="center"
                 android:id="@+id/profile_progress_bar"/>
 
             <TextView
+                android:paddingTop="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Logout"
+                android:textColor="@color/mainColour"
                 android:layout_gravity="center"
                 android:id="@+id/logout_btn"/>
         </LinearLayout>

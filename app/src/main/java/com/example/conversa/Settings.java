@@ -119,7 +119,7 @@ public class Settings extends AppCompatActivity {
         String newUsername = usernameInput.getText().toString();
         if(newUsername.isEmpty() || newUsername.length()<3){
             // Make sure the new username is valid and not empty
-            usernameInput.setError("Username length should be at least 3 chars");
+            usernameInput.setError("Username length should be at least 3 letters");
             return;
         }
         // Update the username in the Firebase
@@ -136,7 +136,6 @@ public class Settings extends AppCompatActivity {
         }else{
             updateFirebaseInfo();
         }
-
     }
     // Method to update user information to Firebase
     void updateFirebaseInfo(){

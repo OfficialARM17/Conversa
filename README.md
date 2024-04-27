@@ -56,6 +56,7 @@ Installation
 3. Build and run the project on your Android device.
 ------------------------------------------------------------------------------------------------
 Acknowledgements
+
 I would like to credit the following links that helped with my understanding and development:
 
 https://stackoverflow.com/questions/71900613/how-to-add-data-from-android-studio-into-realtime-database-firebase

@@ -44,14 +44,28 @@ Set up your Firebase project and update the google-services.json file.
 
 Build and run the app on your Android device or emulator.
 
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 Requirements
 - An Android Device with a Camera
 - Stable Internet Connection
 - Android Version 8.0 or later
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 Installation
 1. Clone this repository to your local machine.
 2. Open the project in Android Studio.
 3. Build and run the project on your Android device.
+------------------------------------------------------------------------------------------------
+Acknowledgements
+I would like to credit the following links that helped with my understanding and development:
+
+https://stackoverflow.com/questions/71900613/how-to-add-data-from-android-studio-into-realtime-database-firebase
+
+https://www.geeksforgeeks.org/user-authentication-using-firebase-in-android/
+
+https://github.com/bimalkaf/Android_Chat_Application
+
+https://github.com/SaharshPandey/Messenger/tree/master
+
+https://github.com/prasannjeet/Firebase-Android-Chat-App
+
 ------------------------------------------------------------------------------------------------
